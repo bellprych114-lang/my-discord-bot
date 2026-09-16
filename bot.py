@@ -12,9 +12,7 @@ async def on_ready():
     print(f'บอทออนไลน์แล้วในชื่อ {bot.user}')
 
 @bot.command()
-async def ดังโงะ!!(ctx):
-    await ctx.send('มีอะไรคะ?')
+async def ดังโงะ(ctx):
+    await ctx.send('คะ?!')
 
-# ดึง Token จากระบบ Render โดยตรง ทำให้ Token ไม่หลุดขึ้น GitHub
 bot.run(os.environ.get('DISCORD_TOKEN'))
-
