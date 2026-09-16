@@ -31,10 +31,7 @@ async def on_ready():
 
 @bot.command()
 async def ดังโงะซัง(ctx):
-    await ctx.send('🍡・「はい〜！ ดังโงะ ('団子/だんご') เองค่ะ~」')
-('🎀・บอทประจำดิส Strawberry Shortcake 🍰')
-('🍓・คอยดูแล ช่วยเหลือ และเติมความน่ารักให้ทุกคนในเซิร์ฟเวอร์ค่ะ ♡!')
-
+    await ctx.send('🍡・「はい〜！ ดังโงะ ('団子/だんご') เองค่ะ~」• 🎀・บอทประจำดิส Strawberry Shortcake 🍰 • 🍓・คอยดูแล ช่วยเหลือ และเติมความน่ารักให้ทุกคนในเซิร์ฟเวอร์ค่ะ ♡!')
 token = os.environ.get('DISCORD_TOKEN')
 if token:
     bot.run(token)
