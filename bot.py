@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 
@@ -11,7 +12,9 @@ async def on_ready():
     print(f'บอทออนไลน์แล้วในชื่อ {bot.user}')
 
 @bot.command()
-async def หวัดดีดังโงะ!(ctx):
-    await ctx.send('สวัสดีค่ะ!!')
+async def ดังโงะ!!(ctx):
+    await ctx.send('มีอะไรคะ?')
 
-bot.run('MTU0OTc1NDM4NTYxNjIwNzkxMw.G5IeqZ.i1zy7eSeUVf1hWNubQ15dlO19PfauYDpoaHZns')
+# ดึง Token จากระบบ Render โดยตรง ทำให้ Token ไม่หลุดขึ้น GitHub
+bot.run(os.environ.get('DISCORD_TOKEN'))
+
